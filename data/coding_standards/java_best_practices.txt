@@ -1,0 +1,18 @@
+Java Best Practices
+
+1. Use meaningful variable, method, and class names that clearly communicate their purpose.
+2. Keep methods small and focused on a single responsibility.
+3. Avoid duplicating code. Extract reusable logic into methods when appropriate.
+4. Prefer constructor injection for required dependencies in Spring applications.
+5. Use constants for fixed values instead of unexplained magic numbers.
+6. Follow standard Java naming conventions:
+   - Classes: PascalCase
+   - Methods and variables: camelCase
+   - Constants: UPPER_SNAKE_CASE
+7. Validate method inputs when invalid values could cause incorrect behavior.
+8. Use appropriate collection types based on access patterns and required operations.
+9. Avoid unnecessary object creation and repeated expensive operations.
+10. Write unit tests for important business logic and edge cases.
+
+Code review guidance:
+Identify specific violations, explain why they matter, and suggest practical improvements. Do not flag stylistic preferences as bugs unless they violate an explicitly defined standard.

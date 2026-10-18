@@ -1,0 +1,15 @@
+Java Security Code Review Guidelines
+
+1. Never hardcode passwords, API keys, access tokens, or database credentials in source code.
+2. Use parameterized SQL queries or prepared statements. Do not concatenate untrusted input into SQL statements.
+3. Validate and constrain untrusted input at appropriate application boundaries.
+4. Do not expose confidential information in application logs or error responses.
+5. Verify authorization on the server side for protected operations. Authentication alone does not establish permission.
+6. Use established cryptographic libraries rather than implementing custom cryptographic algorithms.
+7. Store passwords using an appropriate adaptive password-hashing algorithm, not plaintext or a fast general-purpose hash.
+8. Configure TLS correctly when transmitting sensitive information.
+9. Avoid unsafe deserialization of untrusted data.
+10. Do not disable certificate validation or security checks to make an integration work.
+
+Code review guidance:
+Describe the suspicious code, the potential security impact, and a recommended mitigation. Distinguish confirmed vulnerabilities from patterns that require additional context. Never claim that code is vulnerable without sufficient evidence.

@@ -1,0 +1,5 @@
+streamlit
+openai
+pinecone
+python-dotenv
+langchain-text-splitters # this is for text splitting recursive character splitting

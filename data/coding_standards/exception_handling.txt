@@ -1,0 +1,15 @@
+Java Exception Handling Guidelines
+
+1. Do not silently swallow exceptions with empty catch blocks.
+2. Catch specific exceptions rather than catching Exception or Throwable without a clear justification.
+3. Preserve the original exception as the cause when wrapping it in another exception.
+4. Include meaningful context in error messages without exposing sensitive information.
+5. Use try-with-resources for AutoCloseable resources such as streams and JDBC resources.
+6. Do not use exceptions for ordinary control flow.
+7. Log exceptions at an appropriate level and avoid logging the same exception repeatedly at multiple layers.
+8. Do not expose stack traces, credentials, tokens, or internal system details in client-facing error responses.
+9. Ensure cleanup and resource management remain correct when exceptions occur.
+10. When rethrowing an exception, preserve enough context to diagnose the original failure.
+
+Code review guidance:
+Identify the relevant catch block or resource-management issue, explain the possible impact, and provide a safer alternative where possible.

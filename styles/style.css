@@ -1,0 +1,91 @@
+/* Main application */
+.stApp {
+    background-color: #f5f7fb;
+}
+
+.stButton > button,
+.stButton > button p {
+    color: #ffffff !important;
+}
+/* Main content area */
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Main title */
+h1 {
+    color: #16325c;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+/* Section headings */
+h2, h3 {
+    color: #24476b;
+    font-weight: 650;
+}
+
+/* Paragraph text */
+p {
+    color: #475569;
+    line-height: 1.65;
+}
+
+/* Text area */
+.stTextArea textarea {
+    background-color: #ffffff;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* Text area focus */
+.stTextArea textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.65rem 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+/* Button hover */
+.stButton > button:hover {
+    background-color: #1e40af;
+    color: #ffffff;
+    border: none;
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background-color: #ffffff;
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+}
+
+/* Success, warning, and error messages */
+[data-testid="stAlert"] {
+    border-radius: 8px;
+}
+
+/* Divider */
+hr {
+    border-color: #dbe3ee;
+}
+
+/* Code blocks */
+[data-testid="stCode"] {
+    border-radius: 10px;
+}
+

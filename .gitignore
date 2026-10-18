@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+embedding_cache.db
+embedding_cache.db-journal
+embedding_cache.db-wal
+embedding_cache.db-shm
+
+.idea/
+.vscode/
